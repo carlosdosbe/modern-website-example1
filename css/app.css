@@ -30,6 +30,7 @@ section#main
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 nav
@@ -64,4 +65,140 @@ div.menu-icon
     right: 60px;
     top: 40px;
     z-index: 2;
+}
+
+div.main-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 10%;
+}
+
+div.text
+{
+    width: 400px;
+}
+
+div.text span
+{
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+div.text span font
+{
+    border-top: 3px solid #A178F8;
+}
+
+div.text h2
+{
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    line-height: 83px;
+}
+
+div.text p
+{
+    color: #595659;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+a.btn
+{
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #5734CA 20%, #A178F8);
+    color: #fff;
+    border-radius: 35px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 20px;
+    box-shadow: 2px 2px 30px rgba(161,120,248,0.1);
+    transition: 0.5s;
+}
+
+a.btn:hover
+{
+    transform: scale(1.1);
+}
+
+a.btn:active
+{
+    transform: scale(0.8);
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 50px;
+    padding: 0 10%;
+}
+
+footer div.social
+{
+    display: flex;
+    z-index: 3;
+}
+
+footer div.social a
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgba(252, 252, 252, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7px;
+    font-size: 1.5rem;
+    transition: all ease 0.5s;
+}
+
+footer div.social a:hover
+{
+    background: linear-gradient(45deg, #5734CA 20%, #A178F8);
+    box-shadow: 2px 2px 30px rgba(161, 120, 248, 0.1);
+    transition: all ease 0.4s;
+}
+
+footer div.copy
+{
+    color: #fff;
+}
+
+footer div.arrow
+{
+    align-self: end;
+    width: 50%;
+    border-right: 1px solid #fff;
+    height: 16%;
+    margin-bottom: 3.5rem;
+    position: absolute;
+    bottom: 5px;
+}
+
+.footer div.arrow::after
+{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #fff transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
 }
