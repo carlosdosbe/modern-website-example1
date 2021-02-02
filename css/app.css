@@ -59,12 +59,55 @@ div.menu-icon::before
     font-size: 1.4rem;
 }
 
-div.menu-icon
+div.menu-icon.active::before
+{
+    content: "\f00d";
+}
+
+div.menu
 {
     position: fixed;
     right: 60px;
     top: 40px;
     z-index: 2;
+}
+
+ul.menu
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(22, 22, 27, 0.9);
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+ul.menu li
+{
+    margin: 20px;
+    transition: 0.5s;
+}
+
+ul.menu li a
+{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #5734CA 20%, #A178F8);
+    padding: 10px 20px;
+    border-radius: 35px;
+}
+
+ul.menu li:hover
+{
+    transform: scale(1.1);
 }
 
 div.main-box
@@ -269,4 +312,16 @@ div.search a:hover
 {
     background-color: #fff;
     color: #000;
+}
+
+div.right
+{
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    color: #fff;
+    background-color: #1A191C;
 }
